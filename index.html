@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Mill | Ekslyuziv Tortlar va Shirinliklar</title>
+    <meta name="description"
+        content="Cake Mill - Toshkentdagi eng mazali va go'zal tortlar. Biz har bir mijoz uchun individual yondashuvni ta'minlaymiz.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="#">Cake <span>Mill</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Asosiy</a></li>
+                <li><a href="#menu">Menyu</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#contact">Bog'lanish</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="cart-icon" id="cart-btn">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1920&auto=format&fit=crop" alt="Cake Mill Desserts">
+                    <div class="carousel-content">
+                        <h2>Ekslyuziv Dekor</h2>
+                        <p>Har bir tort - bu san'at asari. Biz sizning quvonchli kunlaringizni yanada shirin qilamiz.
+                        </p>
+                        <a href="https://t.me/uzCakemill" class="btn">Buyurtma berish</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                     <img src="https://images.unsplash.com/photo-1588195538326-c5f1f9fa478f?q=80&w=1920&auto=format&fit=crop" alt="Cake Mill Medovik">
+                    <div class="carousel-content">
+                        <h2>Betakror Ta'm</h2>
+                        <p>Eng sifatli mahsulotlardan tayyorlangan, og'izda eriydigan shirinliklar to'plami.</p>
+                        <a href="#menu" class="btn">Menyuni ko'rish</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                     <img src="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?q=80&w=1920&auto=format&fit=crop" alt="Cake Mill Special Collection">
+                    <div class="carousel-content">
+                        <h2>Sizning Tanlovingiz</h2>
+                        <p>To'y, tug'ilgan kun va boshqa bayramlar uchun maxsus tortlar buyurtma qiling.</p>
+                        <a href="#contact" class="btn">Biz bilan bog'lanish</a>
+                    </div>
+                </div>
+
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container reveal">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Sifatli mahsulotlar</h3>
+                    <p>Biz faqat eng yangi va tabiiy mahsulotlardan foydalanamiz.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <h3>Individual yondashuv</h3>
+                    <p>Sizning xohishingizga ko'ra har qanday dizaynni yaratib beramiz.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Tezkor yetkazib berish</h3>
+                    <p>Toshkent bo'ylab shirinliklarni o'z vaqtida manzilingizga yetkazamiz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="container">
+            <div class="section-title reveal">
+                <h2>Bizning Menyu</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Hammasi</button>
+                <button class="category-btn" data-category="cakes">Tortlar</button>
+                <button class="category-btn" data-category="desserts">Dessertlar</button>
+                <button class="category-btn" data-category="cupcakes">Kapkeklar</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="cakes" data-id="1" data-name="Brownie Cake Mill"
+                    data-price="150000">
+                    <div class="item-img">
+                         <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=800&auto=format&fit=crop" alt="Brownie Cake Mill">
+                    </div>
+                    <div class="item-info">
+                        <h3>Brownie Cake Mill</h3>
+                        <p>Betakror shokoladli premium brownie, Cake Mill maxsus resepti asosida tayyorlangan.</p>
+                        <div class="item-bottom">
+                            <span class="price">150,000 so'm</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cakes" data-id="2" data-name="Dream Cake Mill"
+                    data-price="140000">
+                    <div class="item-img">
+                         <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=800&auto=format&fit=crop" alt="Dream Cake Mill">
+                    </div>
+                    <div class="item-info">
+                        <h3>Dream Cake Mill</h3>
+                        <p>Cake Mill maxsus resepti asosidagi nafis va betakror orzudagi tort.</p>
+                        <div class="item-bottom">
+                            <span class="price">140,000 so'm</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts" data-id="3" data-name="Red Velvet Mill"
+                    data-price="25000">
+                    <div class="item-img">
+                         <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?q=80&w=800&auto=format&fit=crop" alt="Red Velvet Mill">
+                    </div>
+                    <div class="item-info">
+                        <h3>Red Velvet Mill (1 dona)</h3>
+                        <p>Nafis qaymoqli krem va rezavor mevalar bilan uyg'unlashgan premium dessert.</p>
+                        <div class="item-bottom">
+                            <span class="price">25,000 so'm</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts" data-id="4" data-name="Exotica Cake Mill"
+                    data-price="35000">
+                    <div class="item-img">
+                         <img src="https://ibb.co/rGMHQbHs" alt="Exotica Cake Mill">
+                    </div>
+                    <div class="item-info">
+                        <h3>Exotica Cake Mill (1 dona)</h3>
+                        <p>Yashil pista va ekzotik mevalar uyg'unligidagi betakror ta'm.</p>
+                        <div class="item-bottom">
+                            <span class="price">35,000 so'm</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cakes" data-id="5" data-name="Cheesecake Oreo Cake Mill"
+                    data-price="160000">
+                    <div class="item-img">
+                         <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=800&auto=format&fit=crop" alt="Cheesecake Oreo Cake Mill">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cheesecake Oreo Cake Mill</h3>
+                        <p>Oreo pechenyelari va mayin pishloqli krem uyg'unligidagi shokoladli premium cheesecake.</p>
+                        <div class="item-bottom">
+                            <span class="price">160,000 so'm</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cakes" data-id="6" data-name="Honey cake Cake Mill"
+                    data-price="130000">
+                    <div class="item-img">
+                         <img src="https://i.ibb.co/zH2MsmBR/4.jpg" alt="Honey cake Cake Mill">
+                    </div>
+                    <div class="item-info">
+                        <h3>Honey cake Cake Mill</h3>
+                        <p>An'anaviy asalli va sariyog'li mayin qavatlar, klassik Cake Mill uslubida.</p>
+                        <div class="item-bottom">
+                            <span class="price">130,000 so'm</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="https://t.me/uzCakemill" class="btn-outline">Telegramda ko'proq ko'rish</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-grid">
+                <div class="about-content reveal-left">
+                    <div class="section-title left reveal">
+                        <h2>Biz haqimizda</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <p>Cake Mill - bu nafaqat shirinliklar do'koni, balki ijodiy laboratoriya. Biz 2020-yildan buyon
+                        Toshkent shahrida o'z faoliyatimizni olib boramiz. Har bir buyurtmaga alohida mehr va e'tibor
+                        bilan yondashamiz.</p>
+                    <p>Bizning maqsadimiz - sizning eng baxtli lahzalaringizni yanada shirin va unutilmas qilishdir.
+                        Ekslyuziv dekor va individual yondashuv - bu bizning asosiy tamoyillarimiz.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> 100% Tabiiy mahsulotlar</li>
+                        <li><i class="fas fa-check-circle"></i> Unique Design</li>
+                        <li><i class="fas fa-check-circle"></i> Professional Confectioners</li>
+                    </ul>
+                </div>
+                <div class="about-img reveal-right">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop"
+                        alt="Confectionery Studio">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <div class="section-title reveal">
+                <h2>Bog'lanish</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+998999515151">+998 99 951 51 51</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-telegram-plane"></i>
+                        <div>
+                            <h4>Telegram</h4>
+                            <p><a href="https://t.me/uzCakemill">@uzCakemill</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Manzil</h4>
+                            <p>Toshkent shahri, O'zbekiston</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/cakemill_uz"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/uzCakemill"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Savolingiz bormi? Xabar qoldiring</h3>
+                    <form id="feedback-form">
+                        <input type="text" placeholder="Ismingiz" required>
+                        <input type="tel" placeholder="Telefon raqamingiz" required>
+                        <textarea placeholder="Xabaringiz..." rows="5" required></textarea>
+                        <button type="submit" class="btn">Yuborish</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#">Cake <span>Mill</span></a>
+                <p>Ekslyuziv dekor va individual yondashuv.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Tezkor havolalar</h4>
+                <ul>
+                    <li><a href="#home">Asosiy</a></li>
+                    <li><a href="#menu">Menyu</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="#contact">Bog'lanish</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2024 Cake Mill. Barcha huquqlar himoyalangan.</p>
+                <p>Website created by Antigravity AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Savat</h3>
+            <i class="fas fa-times close-cart" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Savat bo'sh</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Jami:</span>
+                <span id="total-price">0 so'm</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Buyurtma berish (@cakemill_uz)</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
